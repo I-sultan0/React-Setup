@@ -1,0 +1,40 @@
+.form {
+  border: 2px solid black;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.heading {
+  text-align: center;
+}
+.textDiv,
+.amountDiv {
+  border: 1px solid black;
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 12px;
+  margin: 15px auto;
+}
+.textDiv label,
+.amountDiv label {
+  margin-right: 15px;
+}
+.textDiv input,
+.amountDiv input {
+  border-radius: 10px;
+  padding: 0.3rem;
+  border: none;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.btn {
+  margin: 10px auto;
+  text-align: center;
+}
+.btn button {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 100px;
+  height: 35px;
+}

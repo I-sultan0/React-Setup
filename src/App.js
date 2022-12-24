@@ -1,25 +1,22 @@
-import logo from "./logo.svg";
-import "./App.css";
+import React, { useState } from "react";
+import Form from "./Components/Form/Form";
+import Output from "./Components/Output/Output";
 
-function App() {
+const App = () => {
+  const [output, setOutput] = useState("");
+
+  const receiveData = (data) => {
+    console.log(data);
+
+    setOutput(data);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React by Sultan
-        </a>
-      </header>
-    </div>
+    <>
+      <Form sendData={receiveData} />
+      <Output items={output} />
+    </>
   );
-}
+};
 
 export default App;
