@@ -1,0 +1,14 @@
+.filter {
+  /* border: 1px solid black; */
+  text-align: center;
+}
+
+.filter label {
+  display: block;
+  margin: 10px 0;
+}
+.filter select {
+  padding: 0.6rem;
+  border: 1px solid black;
+  border-radius: 10px;
+}

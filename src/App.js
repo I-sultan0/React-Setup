@@ -1,9 +1,9 @@
 import React, { useState } from "react";
+import AllComponent from "./Components/AllComponent";
 import Form from "./Components/Form/Form";
-import Output from "./Components/Output/Output";
 
 const App = () => {
-  const [output, setOutput] = useState("");
+  const [output, setOutput] = useState([]);
 
   const receiveData = (data) => {
     console.log(data);
@@ -16,7 +16,7 @@ const App = () => {
   return (
     <>
       <Form sendData={receiveData} />
-      <Output items={output} />
+      <AllComponent items={output} />
     </>
   );
 };
