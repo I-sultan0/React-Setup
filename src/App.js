@@ -8,7 +8,9 @@ const App = () => {
   const receiveData = (data) => {
     console.log(data);
 
-    setOutput(data);
+    setOutput((prevExpense) => {
+      return [...prevExpense, data];
+    });
   };
 
   return (

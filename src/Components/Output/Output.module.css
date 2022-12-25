@@ -1,0 +1,12 @@
+.noExpense,
+.heading {
+  text-align: center;
+}
+.outExp {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px auto;
+  border: 1px solid black;
+  border-radius: 12px;
+}

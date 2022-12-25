@@ -16,6 +16,7 @@ const Form = (props) => {
   const submitHandler = (e) => {
     e.preventDefault();
     const data = {
+      id: Math.random(),
       expense: expense,
       amount: +amount,
     };
