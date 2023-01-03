@@ -6,6 +6,7 @@ const AllComponent = (props) => {
   const [filteredAmount, setFilteredAmount] = useState("100");
 
   const updateAmount = (amount) => {
+    console.log(amount);
     setFilteredAmount(amount);
   };
 

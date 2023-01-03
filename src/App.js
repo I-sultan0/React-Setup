@@ -12,7 +12,7 @@ const App = () => {
       return [...prevExpense, data];
     });
   };
-
+  console.log(output);
   return (
     <>
       <Form sendData={receiveData} />
